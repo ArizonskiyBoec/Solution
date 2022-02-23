@@ -8,61 +8,34 @@ namespace Solution
 {
     internal class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            Console.Write("Введите ваш вес: ");
-            double m = double.Parse(Console.ReadLine());
-            Console.Write("Введите ваш рост: ");
-            double h = double.Parse(Console.ReadLine());
-            h = h / 100;
-            Program imt = new Program();
-            Console.WriteLine("Индекс массы тела равен: " + imt.VIMT(m, h));
-            double a=imt.VIMT(m, h);
-            VivIMT(ref a);
+            ImtCalc();
         }
-        public double VIMT(double m,double h)
+        
+
+        public static void ImtCalc()
         {
-            return m / (h * h);
+            var ves = ToDouble(GetValueFromUser("Введите вес: "));
+            var rost = ToDouble(GetValueFromUser("Введите рост: "));
+            var imtCalc = new ImtCalc();
+            var imt = imtCalc.ImtCalculate(ves, rost);
+            var opis = imtCalc.GetOpis(imt);
+            Console.WriteLine(imt);
+            Console.WriteLine(opis);
+            Console.ReadKey();
         }
 
-        static void VivIMT(ref double a)
+        private static double ToDouble(string value)
         {
-            if (a < 16)
-            {
-                Console.WriteLine("У вас значительный дефицит массы тела");
-                Console.ReadKey();
-            }
-            else if (a > 16 && a <= 18.5)
-            {
-                Console.WriteLine("У вас дефицит массы тела");
-                Console.ReadKey();
-            }
-            else if (a >= 18.5 && a <= 25)
-            {
-                Console.WriteLine("У вас нормальная масса тела");
-                Console.ReadKey();
-            }
-            else if (a >= 25 && a <= 30)
-            {
-                Console.WriteLine("У вас есть лишний вес");
-                Console.ReadKey();
-            }
-            else if (a >= 30 && a <= 35)
-            {
-                Console.WriteLine("У вас ожирение первой степени");
-                Console.ReadKey();
-            }
-            else if (a >= 35 && a <= 40)
-            {
-                Console.WriteLine("У вас ожирение второй степени");
-                Console.ReadKey();
-            }
-            else if (a >= 40)
-            {
-                Console.WriteLine("У вас ожирение третьей степени");
-                Console.ReadKey();
-            }
+            return double.Parse(value);
         }
+        private static string GetValueFromUser(string message)
+        {
+            Console.WriteLine(message);
+            return Console.ReadLine();
+        }
+
     }
 }
 
