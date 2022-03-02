@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Massiv", "Massiv\Massiv.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sred", "Sred\Sred.csproj", "{8673606D-B47E-4EFA-999F-F9B49419E962}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dz1", "Dz1", "{D0A5894E-0999-478E-8702-FF00726CAD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dz2", "Dz2", "{DAEA29CB-5026-4EE1-84FD-051239C21992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChastSlov", "ConsoleApp1\ChastSlov.csproj", "{4A84146F-58A7-40D6-9E9E-810C4C7E526E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{8673606D-B47E-4EFA-999F-F9B49419E962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8673606D-B47E-4EFA-999F-F9B49419E962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8673606D-B47E-4EFA-999F-F9B49419E962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A84146F-58A7-40D6-9E9E-810C4C7E526E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A84146F-58A7-40D6-9E9E-810C4C7E526E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A84146F-58A7-40D6-9E9E-810C4C7E526E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A84146F-58A7-40D6-9E9E-810C4C7E526E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9092FDC-3226-42CD-A589-86048902BB20} = {D0A5894E-0999-478E-8702-FF00726CAD6E}
+		{FB8DD832-B5B6-443C-A335-1D5AECB36A22} = {D0A5894E-0999-478E-8702-FF00726CAD6E}
+		{8673606D-B47E-4EFA-999F-F9B49419E962} = {D0A5894E-0999-478E-8702-FF00726CAD6E}
+		{4A84146F-58A7-40D6-9E9E-810C4C7E526E} = {DAEA29CB-5026-4EE1-84FD-051239C21992}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C7601BEC-9951-46CC-BB2B-CA363B50C50B}
