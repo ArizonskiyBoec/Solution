@@ -4,29 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sred
+namespace Solution
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            DlinaStroki();
+            ImtCalc();
         }
-        public static void DlinaStroki()
+        
+
+        public static void ImtCalc()
         {
-            string str = GetValueFromUser("Введите строку");
-            var avg = new VichSred();
-            char[] vs = avg.Punct(str);
-            string [] slovo=avg.StringRazdel(str, vs);
-            int[] dl=avg.StrokaDlina(slovo);
-            var sr = avg.Sredn(dl);
-            Console.ReadLine();
+            var ves = ToDouble(GetValueFromUser("Введите вес: "));
+            var rost = ToDouble(GetValueFromUser("Введите рост: "));
+            var imtCalc = new ImtCalc();
+            var imt = imtCalc.ImtCalculate(ves, rost);
+            var opis = imtCalc.GetOpis(imt);
+            Console.WriteLine(imt);
+            Console.WriteLine(opis);
+            Console.ReadKey();
         }
 
+        private static double ToDouble(string value)
+        {
+            return double.Parse(value);
+        }
         private static string GetValueFromUser(string message)
         {
             Console.WriteLine(message);
             return Console.ReadLine();
         }
+
     }
 }
+
+
