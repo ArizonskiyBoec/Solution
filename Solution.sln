@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DynamicArra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Collection.csproj", "{B0D8F455-5130-45F7-B780-2A65E1B34FCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateFirst", "DelegateFirst\DelegateFirst.csproj", "{CBFFA23F-27D0-4693-8377-84836B27C91E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{B0D8F455-5130-45F7-B780-2A65E1B34FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0D8F455-5130-45F7-B780-2A65E1B34FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0D8F455-5130-45F7-B780-2A65E1B34FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFFA23F-27D0-4693-8377-84836B27C91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFFA23F-27D0-4693-8377-84836B27C91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFFA23F-27D0-4693-8377-84836B27C91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFFA23F-27D0-4693-8377-84836B27C91E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{0D383D77-C411-4534-B516-DC320D3D932F} = {DAEA29CB-5026-4EE1-84FD-051239C21992}
 		{91459D8E-E33F-4BBE-BA08-1CF4CCE90DED} = {DAEA29CB-5026-4EE1-84FD-051239C21992}
 		{B0D8F455-5130-45F7-B780-2A65E1B34FCF} = {DAEA29CB-5026-4EE1-84FD-051239C21992}
+		{CBFFA23F-27D0-4693-8377-84836B27C91E} = {DAEA29CB-5026-4EE1-84FD-051239C21992}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C7601BEC-9951-46CC-BB2B-CA363B50C50B}
